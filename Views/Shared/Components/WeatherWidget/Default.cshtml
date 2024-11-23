@@ -1,0 +1,14 @@
+﻿@model lr9.Models.WeatherInfo
+
+@if (Model != null)
+{
+    <div class="weather-widget">
+        <h3>Weather in @Model.City</h3>
+        <p>Temperature: @Model.Temperature°C</p>
+        <p>Conditions: @Model.Description</p>
+    </div>
+}
+else
+{
+    <p>Weather information is not available.</p>
+}
